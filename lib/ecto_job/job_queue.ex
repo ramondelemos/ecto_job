@@ -54,7 +54,7 @@ defmodule EctoJob.JobQueue do
           max_attempts: integer | nil,
           params: map(),
           notify: String.t() | nil,
-          priority: integer | nil,
+          priority: integer,
           inserted_at: DateTime.t() | nil,
           updated_at: DateTime.t() | nil
         }
