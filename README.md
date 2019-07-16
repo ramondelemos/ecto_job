@@ -129,7 +129,7 @@ A job can be inserted with optional params:
 
 - `:schedule` : runs the job at the given `%DateTime{}`. The default value is `DateTime.utc_now()`.
 - `:max_attempts` : the maximum attempts for this job. The default value is `5`.
-- `:priority` : the priority of this work, the default value is `0`. Increase this value to decrease priority.
+- `:priority` (integer): lower numbers run first; default is 0
 
 ```elixir
 %{"type" => "SendEmail", "address" => "joe@gmail.com", "body" => "Welcome!"}
